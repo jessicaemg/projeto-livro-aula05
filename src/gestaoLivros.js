@@ -57,15 +57,6 @@ export function buscarLivroTodos(id){
  }
 }
 
-export function buscarLivroPorID99(id) {
-  const livroEncontrado = Livros.find(livro => livro.id === id);
-  
-   if (!livroEncontrado) {
-        throw new Error('Livro não encontrado');
-    }  
-    return livroEncontrado.titulo;
-}
-
 export function buscarLivroPorID0(id) {
   
   if (id === undefined || id === null || id <= 0) {

@@ -1,5 +1,4 @@
 import { buscarLivroPorID } from '../src/gestaoLivros.js';
-import { buscarLivroPorID99 } from '../src/gestaoLivros.js';
 import { buscarLivroPorID0 } from '../src/gestaoLivros.js';
 import { buscarLivroTodos } from '../src/gestaoLivros.js';
 import assert from 'node:assert'
@@ -38,11 +37,11 @@ describe('Gestão de testes de livros', function() {
      assert.strictEqual(tituloLivroRetornado, 'O principe que eu amo');
     });
 
-    it ('Validar que a função que receba o ID de um livro e retorne o seu título' , function(){
+    it ('Validar que a função que receba o ID 99 de um livro e retorne o seu título' , function(){
 
-      const id = 99;
+      
       const tituloLivroEsperado = 'A Certeza';
-      const tituloLivroRetornado = buscarLivroPorID99(id);
+      const tituloLivroRetornado = buscarLivroPorID(99);
 
      assert.strictEqual(tituloLivroRetornado, tituloLivroEsperado);
     });
