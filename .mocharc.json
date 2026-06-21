@@ -2,6 +2,8 @@
   "spec": "test/**/*.test.js",
   "reporter": "mochawesome",
   "reporter-options": [
-    "reportDir=mochawesome-report"
+    "reportDir=mochawesome-report",
+    "inline=true",
+    "inlineAssets=true"
   ]
 }

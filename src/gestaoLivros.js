@@ -4,7 +4,6 @@
 //3- Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID.
 //4- [Avançado] validar se o ID foi informado e é maior que o 0.
 //5- Escreva dois testes automatizados de unidade para testar as condições de envio incorreto do ID.
-//6- adicionar o mochawesome para gerar relátorios em hml 
 
 const Livros = [
   {

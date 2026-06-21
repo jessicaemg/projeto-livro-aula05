@@ -1,4 +1,4 @@
-name: Trabalho de conclusão 
+name: Execucao agendada
 # Gatilhos de execução exigidos
 on:
   push:

@@ -1,4 +1,4 @@
-name: Trabalho de conclusão 
+name: N1 - Execução manual
 # Gatilhos de execução exigidos
 on:
   push:
