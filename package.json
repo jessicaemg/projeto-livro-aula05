@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "test": "mocha",
-      "e2e": "yarn test"
+    "test": "mocha \"test/**/*.test.js\" --reporter mochawesome --reporter-options reportDir=mochawesome-report,inline=true,charts=true",
+    "e2e": "yarn test"
+}
   },
   "keywords": [],
   "author": "jessicaemg <jessicaestevesmg@gmail.com>",
