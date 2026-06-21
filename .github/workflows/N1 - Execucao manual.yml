@@ -41,7 +41,7 @@ jobs:
           - name: Executando testes e2e 
             env:
                 BASE_URL: 'https://jessicaemg.github.io/projeto-livro-aula05'
-            run: yarn run e2e
+            run: yarn test --reporter-options reportDir=mochawesome-report,inline=true,charts=true
 
           # Salvando o relatório que o seu comando gerou na pasta mochawesome-report
           - name: Salvando o Relatório do Mochawesome

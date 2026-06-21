@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha \"test/**/*.test.js\" --reporter mochawesome --reporter-options reportDir=mochawesome-report,inline=true,charts=true",
+    "test": "mocha test/**/*.test.js --reporter mochawesome",
     "e2e": "yarn test"
 }
   },
