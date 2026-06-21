@@ -17,46 +17,37 @@ jobs:
 
     steps:
       #clone do projeto
-          - uses: actions/checkout@v4
+       - uses: actions/checkout@v4
 
-          #passo a passo do node 
-          - uses: actions/setup-node@v4
-            with:
-             node-version: 22.x
+      #passo a passo do node 
+       - uses: actions/setup-node@v4
+         with:
+          node-version: 22.x
+        
+      #instalação do yarn 
+       - name: instalando Yarn 
+         run: npm install -g yarn 
 
-          #instalação do yarn 
-          - name: instalando Yarn 
-            run: npm install -g yarn 
 
+      #Instalação das dependências do projeto
+       - name: instalando dependencias
+         run: yarn install
 
-          #instalação das dependencias 
-          - name: instalando dependencias
-            run: yarn
+      # instalação o mocha 
+       - name: instalando o mocha
+         run: yarn add mocha --dev
 
-          # instalação o mocha 
-          - name: instalando o mocha
-            run: yarn add mocha --dev
+      # execução dos testes e2e 
+       - name: Executando testes e2e 
+         env:
+           BASE_URL: 'https://jessicaemg.github.io/projeto-livro-aula05'
+         run: yarn test --reporter-options reportDir=mochawesome-report,inline=true,charts=true
 
-          # execução dos testes e2e 
-          - name: Executando testes e2e 
-            env:
-                BASE_URL: 'https://jessicaemg.github.io/projeto-livro-aula05'
-            run: yarn test --reporter-options reportDir=mochawesome-report,inline=true,charts=true
-
-          # Salvando o relatório que o seu comando gerou na pasta mochawesome-report
-          - name: Salvando o Relatório do Mochawesome
-            uses: actions/upload-artifact@v4
-            if: always() # Salva mesmo se o teste falhar
-            with:
-             name: relatorio-livros-mocha
-             path: mochawesome-report/
-             retention-days: 30
-
-          # 2. NOVO: Captura e armazena os arquivos do relatório na pipeline
-          - name: Armazenando o Relatório do Mochawesome
-            uses: actions/upload-artifact@v4
-            if: always() 
-            with:
-              name: relatorio-livros-mocha-${{ github.run_attempt }}      
-              path: mochawesome-report/       
-              retention-days: 30              
+      #Captura e armazena os arquivos do relatório na pipeline
+       - name: Armazenando o Relatório do Mochawesome
+         uses: actions/upload-artifact@v4
+         if: always() 
+         with:
+          name: relatorio-livros-mocha-${{ github.run_attempt }}      
+          path: mochawesome-report/       
+          retention-days: 30              
