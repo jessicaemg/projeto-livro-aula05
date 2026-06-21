@@ -6,7 +6,6 @@
   "scripts": {
     "test": "mocha test/**/*.test.js --reporter mochawesome",
     "e2e": "yarn test"
-}
   },
   "keywords": [],
   "author": "jessicaemg <jessicaestevesmg@gmail.com>",

@@ -5,9 +5,9 @@
     "passes": 8,
     "pending": 0,
     "failures": 0,
-    "start": "2026-06-21T03:41:48.792Z",
-    "end": "2026-06-21T03:41:48.798Z",
-    "duration": 6,
+    "start": "2026-06-21T18:25:47.632Z",
+    "end": "2026-06-21T18:25:47.639Z",
+    "duration": 7,
     "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a35fd9b6-3020-4256-9367-20103dc9ab3b",
+      "uuid": "e7f0cf6e-fb14-47c2-90a5-97efb737aeb4",
       "title": "",
       "fullFile": "C:\\Projetos\\projeto livro aula05\\test\\gestaoLivros.test.js",
       "file": "\\test\\gestaoLivros.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a108e988-a439-491f-acb9-c2e852db2221",
+          "uuid": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
           "title": "Gestão de busca de livros",
           "fullFile": "C:\\Projetos\\projeto livro aula05\\test\\gestaoLivros.test.js",
           "file": "\\test\\gestaoLivros.test.js",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const id = 1;\n      const tituloLivroRetornado = buscarLivroTodos(id);\n     assert.strictEqual(tituloLivroRetornado, 'O poder do arcanjo Miguel');",
               "err": {},
-              "uuid": "edbd16a1-3341-4abb-924b-9b62690a0c90",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "73b74a28-f9a6-4f2d-b97e-6b17c47b10da",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "const id = 2;\n      const tituloLivroRetornado = buscarLivroPorID(id);\n     assert.strictEqual(tituloLivroRetornado, 'A gemea errada');",
               "err": {},
-              "uuid": "61563de1-c1e8-4b3e-9cc6-03bce9d53a7b",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "3dc634da-6e96-404d-90ba-ad8104fddbc0",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "const id = 3;\n      const tituloLivroRetornado = buscarLivroPorID(id);\n     assert.strictEqual(tituloLivroRetornado, 'O CEO tem que casar');",
               "err": {},
-              "uuid": "83861005-221f-48f9-9ced-bd5038895383",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "e822ffae-42ae-491c-9756-cc8456b7883b",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             },
@@ -101,8 +101,8 @@
               "context": null,
               "code": "const id = 4;\n      const tituloLivroRetornado = buscarLivroPorID(id);\n     assert.strictEqual(tituloLivroRetornado, 'O principe que eu amo');",
               "err": {},
-              "uuid": "b2c82302-d244-4998-9eb0-6af1c4664be3",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "c66fb43c-0002-4587-a5d6-12ca53cda698",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             },
@@ -119,8 +119,8 @@
               "context": null,
               "code": "const tituloLivroEsperado = 'A Certeza';\n      const tituloLivroRetornado = buscarLivroPorID(99);\n     assert.strictEqual(tituloLivroRetornado, tituloLivroEsperado);",
               "err": {},
-              "uuid": "3bbfe1f2-8d22-4232-8f30-1617172d0969",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "082e8536-ea7e-4d2b-994d-f62238d0dd6c",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             },
@@ -128,7 +128,7 @@
               "title": "Validar se o ID informado for 0 deve da erro",
               "fullTitle": "Gestão de busca de livros Validar se o ID informado for 0 deve da erro",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -137,8 +137,8 @@
               "context": null,
               "code": "assert.throws(\n  () => { buscarLivroPorID0(0); },\n  {\n      message: 'Id inválido, não possui nenhum livro com o ID informado.'\n  }\n);",
               "err": {},
-              "uuid": "d20e8cce-6f11-4a7a-83ef-83437c2dfb43",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "5223faf9-81b7-4d2a-afc1-0ee82dbaf547",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             },
@@ -155,8 +155,8 @@
               "context": null,
               "code": "assert.throws(\n  () => { buscarLivroPorID0(); },\n  {\n      message: 'Id inválido, não possui nenhum livro com o ID informado.'\n  }\n);",
               "err": {},
-              "uuid": "ec71018d-ba28-4f72-a162-ec0745a66afa",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "849479a9-4bde-45dc-ae54-14de7170eb08",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             },
@@ -173,27 +173,27 @@
               "context": null,
               "code": "assert.throws(\n  () => { buscarLivroPorID0(-2); },\n  {\n      message: 'Id inválido, não possui nenhum livro com o ID informado.'\n  }\n);",
               "err": {},
-              "uuid": "7e622996-be60-4ea2-a96e-2a2b8fddc7e3",
-              "parentUUID": "a108e988-a439-491f-acb9-c2e852db2221",
+              "uuid": "d4cef583-4950-4c0d-bd1b-cbe023de3b52",
+              "parentUUID": "d30a888e-9323-4b1b-85a5-b5d2e284a0ea",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "edbd16a1-3341-4abb-924b-9b62690a0c90",
-            "61563de1-c1e8-4b3e-9cc6-03bce9d53a7b",
-            "83861005-221f-48f9-9ced-bd5038895383",
-            "b2c82302-d244-4998-9eb0-6af1c4664be3",
-            "3bbfe1f2-8d22-4232-8f30-1617172d0969",
-            "d20e8cce-6f11-4a7a-83ef-83437c2dfb43",
-            "ec71018d-ba28-4f72-a162-ec0745a66afa",
-            "7e622996-be60-4ea2-a96e-2a2b8fddc7e3"
+            "73b74a28-f9a6-4f2d-b97e-6b17c47b10da",
+            "3dc634da-6e96-404d-90ba-ad8104fddbc0",
+            "e822ffae-42ae-491c-9756-cc8456b7883b",
+            "c66fb43c-0002-4587-a5d6-12ca53cda698",
+            "082e8536-ea7e-4d2b-994d-f62238d0dd6c",
+            "5223faf9-81b7-4d2a-afc1-0ee82dbaf547",
+            "849479a9-4bde-45dc-ae54-14de7170eb08",
+            "d4cef583-4950-4c0d-bd1b-cbe023de3b52"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -227,7 +227,9 @@
     },
     "marge": {
       "options": {
-        "reportDir": "mochawesome-report"
+        "reportDir": "mochawesome-report",
+        "inline": "true",
+        "charts": "true"
       },
       "version": "6.3.2"
     }
