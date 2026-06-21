@@ -1,0 +1,7 @@
+{
+  "spec": "test/**/*.test.js",
+  "reporter": "mochawesome",
+  "reporter-options": [
+    "reportDir=mochawesome-report"
+  ]
+}

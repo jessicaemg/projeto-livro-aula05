@@ -3,7 +3,7 @@ import { buscarLivroPorID0 } from '../src/gestaoLivros.js';
 import { buscarLivroTodos } from '../src/gestaoLivros.js';
 import assert from 'node:assert'
 
-describe('Gestão de testes de livros', function() {
+describe('Gestão de busca de livros', function() {
     // caminho de busca por for para vê se tem o mesmo retorno 
     it ('Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID' , function(){
 

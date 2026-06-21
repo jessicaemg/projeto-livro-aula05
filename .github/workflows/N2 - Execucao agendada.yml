@@ -1,0 +1,47 @@
+name: Trabalho de conclusão 
+# Gatilhos de execução exigidos
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  schedule:
+    - cron: '0 */2 * * *' #Execucao agendada de 2 em 2 horas 
+  workflow_dispatch: # Execução manual
+  
+jobs:
+  test-automation:
+    runs-on: ubuntu-latest
+
+    steps:
+      #clone do projeto
+          - uses: actions/checkout@v4
+
+          #passo a passo do node 
+          - uses: actions/setup-node@v4
+            with:
+             node-version: 24.x
+
+          #instalação do yarn 
+          - name: instalando Yarn 
+            run: npm install -g yarn 
+
+
+          #instalação das dependencias 
+          - name: instalando dependencias
+            run: yarn
+
+          # instalação o mocha 
+          - name: instalando o mocha
+            run: yarn add mocha --dev
+
+
+          # execução dos testes e2e 
+          - name: Executando testes e2e 
+            env:
+                BASE_URL: 'https://jessicaemg.github.io/projeto-livro-aula05'
+            run: yarn run e2e

@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 7,
-    "passes": 7,
+    "tests": 8,
+    "passes": 8,
     "pending": 0,
     "failures": 0,
-    "start": "2026-05-27T19:06:42.921Z",
-    "end": "2026-05-27T19:06:42.927Z",
+    "start": "2026-06-21T03:05:10.287Z",
+    "end": "2026-06-21T03:05:10.293Z",
     "duration": 6,
-    "testsRegistered": 7,
+    "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "972bb3fe-c9e7-4710-b8c2-4eaa934ae421",
+      "uuid": "463d6b15-5a51-456d-88f6-2538e88b78a9",
       "title": "",
       "fullFile": "C:\\Projetos\\projeto livro aula05\\test\\gestaoLivros.test.js",
       "file": "\\test\\gestaoLivros.test.js",
@@ -27,8 +27,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
-          "title": "Gestão de testes de livros",
+          "uuid": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
+          "title": "Gestão de busca de livros",
           "fullFile": "C:\\Projetos\\projeto livro aula05\\test\\gestaoLivros.test.js",
           "file": "\\test\\gestaoLivros.test.js",
           "beforeHooks": [],
@@ -36,7 +36,7 @@
           "tests": [
             {
               "title": "Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
-              "fullTitle": "Gestão de testes de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
+              "fullTitle": "Gestão de busca de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
               "timedOut": false,
               "duration": 0,
               "state": "passed",
@@ -45,16 +45,16 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const id = 1;\n      const tituloLivroRetornado = buscarLivroPorID(id);\n     assert.strictEqual(tituloLivroRetornado, 'O poder do arcanjo Miguel');",
+              "code": "const id = 1;\n      const tituloLivroRetornado = buscarLivroTodos(id);\n     assert.strictEqual(tituloLivroRetornado, 'O poder do arcanjo Miguel');",
               "err": {},
-              "uuid": "c8003756-f4d3-4573-b329-52150061fe08",
-              "parentUUID": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
+              "uuid": "d5caa021-f969-4835-b308-13f3177ebb7a",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
-              "fullTitle": "Gestão de testes de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
+              "fullTitle": "Gestão de busca de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
               "timedOut": false,
               "duration": 0,
               "state": "passed",
@@ -65,16 +65,16 @@
               "context": null,
               "code": "const id = 2;\n      const tituloLivroRetornado = buscarLivroPorID(id);\n     assert.strictEqual(tituloLivroRetornado, 'A gemea errada');",
               "err": {},
-              "uuid": "4e881f27-1ce3-4b53-8e2d-034461cb4868",
-              "parentUUID": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
+              "uuid": "c77fa92f-1a1c-4359-8bbd-3a996216facf",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
-              "fullTitle": "Gestão de testes de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
+              "fullTitle": "Gestão de busca de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,14 +83,14 @@
               "context": null,
               "code": "const id = 3;\n      const tituloLivroRetornado = buscarLivroPorID(id);\n     assert.strictEqual(tituloLivroRetornado, 'O CEO tem que casar');",
               "err": {},
-              "uuid": "af225cfc-4677-4430-b74c-1818fc177f9f",
-              "parentUUID": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
+              "uuid": "5e203d7e-6518-44e0-af29-438f69598399",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
-              "fullTitle": "Gestão de testes de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
+              "fullTitle": "Gestão de busca de livros Escreva um teste automatizado de unidade para testar a condição de busca do titulo por ID",
               "timedOut": false,
               "duration": 0,
               "state": "passed",
@@ -101,14 +101,14 @@
               "context": null,
               "code": "const id = 4;\n      const tituloLivroRetornado = buscarLivroPorID(id);\n     assert.strictEqual(tituloLivroRetornado, 'O principe que eu amo');",
               "err": {},
-              "uuid": "6eddeb0c-50cf-4f1b-bfbd-c974ccccf9dc",
-              "parentUUID": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
+              "uuid": "1b979fc8-b233-417d-ac53-58baaf96ed87",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validar que a função que receba o ID de um livro e retorne o seu título",
-              "fullTitle": "Gestão de testes de livros Validar que a função que receba o ID de um livro e retorne o seu título",
+              "title": "Validar que a função que receba o ID 99 de um livro e retorne o seu título",
+              "fullTitle": "Gestão de busca de livros Validar que a função que receba o ID 99 de um livro e retorne o seu título",
               "timedOut": false,
               "duration": 0,
               "state": "passed",
@@ -117,16 +117,16 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const id = 99;\n      const tituloLivroEsperado = 'A Certeza';\n      const tituloLivroRetornado = buscarLivroPorID99(id);\n     assert.strictEqual(tituloLivroRetornado, tituloLivroEsperado);",
+              "code": "const tituloLivroEsperado = 'A Certeza';\n      const tituloLivroRetornado = buscarLivroPorID(99);\n     assert.strictEqual(tituloLivroRetornado, tituloLivroEsperado);",
               "err": {},
-              "uuid": "ff6cf7f0-112d-4d8f-8ed1-bf3cd9eb7a0c",
-              "parentUUID": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
+              "uuid": "1325e694-4c43-4466-84b7-86e2f0f144a5",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Validar se o ID informado for 0 deve da erro",
-              "fullTitle": "Gestão de testes de livros Validar se o ID informado for 0 deve da erro",
+              "fullTitle": "Gestão de busca de livros Validar se o ID informado for 0 deve da erro",
               "timedOut": false,
               "duration": 1,
               "state": "passed",
@@ -137,14 +137,14 @@
               "context": null,
               "code": "assert.throws(\n  () => { buscarLivroPorID0(0); },\n  {\n      message: 'Id inválido, não possui nenhum livro com o ID informado.'\n  }\n);",
               "err": {},
-              "uuid": "2aa27c6f-ac4a-40b4-9643-ded00ddb0ef1",
-              "parentUUID": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
+              "uuid": "a13e0530-900f-4993-ac76-fac2aa287e88",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Validar se o ID estiver vazio deve da erro",
-              "fullTitle": "Gestão de testes de livros Validar se o ID estiver vazio deve da erro",
+              "fullTitle": "Gestão de busca de livros Validar se o ID estiver vazio deve da erro",
               "timedOut": false,
               "duration": 0,
               "state": "passed",
@@ -155,26 +155,45 @@
               "context": null,
               "code": "assert.throws(\n  () => { buscarLivroPorID0(); },\n  {\n      message: 'Id inválido, não possui nenhum livro com o ID informado.'\n  }\n);",
               "err": {},
-              "uuid": "06871543-481a-4c9e-97fa-81820f0f03e6",
-              "parentUUID": "908a0067-3596-4ab7-b7c5-a07bdb997a47",
+              "uuid": "165d53b0-bf72-43cf-878a-721fc2612695",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar se o ID for menor que 0 deve da erro",
+              "fullTitle": "Gestão de busca de livros Validar se o ID for menor que 0 deve da erro",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "assert.throws(\n  () => { buscarLivroPorID0(-2); },\n  {\n      message: 'Id inválido, não possui nenhum livro com o ID informado.'\n  }\n);",
+              "err": {},
+              "uuid": "4c35b50c-8020-4790-b71e-285cea317a82",
+              "parentUUID": "442e3409-0fa4-48bf-82d7-9ed58e584c62",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c8003756-f4d3-4573-b329-52150061fe08",
-            "4e881f27-1ce3-4b53-8e2d-034461cb4868",
-            "af225cfc-4677-4430-b74c-1818fc177f9f",
-            "6eddeb0c-50cf-4f1b-bfbd-c974ccccf9dc",
-            "ff6cf7f0-112d-4d8f-8ed1-bf3cd9eb7a0c",
-            "2aa27c6f-ac4a-40b4-9643-ded00ddb0ef1",
-            "06871543-481a-4c9e-97fa-81820f0f03e6"
+            "d5caa021-f969-4835-b308-13f3177ebb7a",
+            "c77fa92f-1a1c-4359-8bbd-3a996216facf",
+            "5e203d7e-6518-44e0-af29-438f69598399",
+            "1b979fc8-b233-417d-ac53-58baaf96ed87",
+            "1325e694-4c43-4466-84b7-86e2f0f144a5",
+            "a13e0530-900f-4993-ac76-fac2aa287e88",
+            "165d53b0-bf72-43cf-878a-721fc2612695",
+            "4c35b50c-8020-4790-b71e-285cea317a82"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -207,7 +226,9 @@
       "version": "7.1.4"
     },
     "marge": {
-      "options": null,
+      "options": {
+        "reportDir": "mochawesome-report"
+      },
       "version": "6.3.2"
     }
   }
