@@ -55,8 +55,8 @@ jobs:
           # 2. NOVO: Captura e armazena os arquivos do relatório na pipeline
           - name: Armazenando o Relatório do Mochawesome
             uses: actions/upload-artifact@v5
-            if: always() # 🔥 CRÍTICO: Garante que o relatório seja salvo mesmo se algum teste falhar!
+            if: always() 
             with:
-              name: relatorio-livros-mocha       # Nome do arquivo zip que você vai baixar
-              path: mochawesome-report/       # A pasta exata que o seu Mocha gerou
-              retention-days: 30              # Tempo que o GitHub vai guardar o arquivo (até 30 dias
+              name: relatorio-livros-mocha-${{ github.run_attempt }}      
+              path: mochawesome-report/       
+              retention-days: 30              
