@@ -1,4 +1,4 @@
-name: Execucao agendada
+name: N2 - Execucao agendada
 # Gatilhos de execução exigidos
 on:
   push:
