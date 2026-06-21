@@ -1,0 +1,14 @@
+# Pastas de dependências locais
+node_modules/
+.pnp/
+.pnp.js
+
+# Relatórios locais do Mochawesome
+mochawesome-report/
+
+# Arquivos de log e sistema
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db

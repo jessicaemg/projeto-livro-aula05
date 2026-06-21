@@ -45,15 +45,18 @@ yarn test
 
 
 Estrutura do projeto 
-projeto-livro-aula05/
-├── mochawesome-report
-├── src/
-│   └── gestaoLivros.js
-├── test/
-│   └── gestaoLivros.test.js
-├── .mocharc.json
-├── package.json
-└── README.md
+📁 projeto-livro-aula05/          <-- Raiz do seu projeto
+ ├── 📁 .github/
+ │    └── 📁 workflows/
+ │         └── 📄 N1 - Execucao manual.yml     
+ |         └── 📄 N2 - Execucao agendada.yml
+ ├── 📁 src/
+ │    └── gestaoLivros.js
+ ├── 📁 test/
+ │    └── 📄 gestaoLivros.test.js
+ ├── 📄 .gitignore
+ ├── 📄 package.json
+ └── 📄 index.js
 
 Detalhes dos testes 
 - Realizar a busca por cada livro que possui ID válido existente na base.
