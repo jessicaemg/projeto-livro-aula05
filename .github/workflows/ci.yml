@@ -1,0 +1,47 @@
+name: Trabalho de conclusão de
+# Gatilhos de execução exigidos
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch: # Execução manual
+  schedule:
+    - cron: '0 8 * * 1-5' # Execução agendada: Segunda a Sexta às 08:00 UTC (05:00 BRT)
+
+jobs:
+  test-automation:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout do código do repositório
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      # 2. Configuração do ambiente (Node.js)
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-node: '20'
+          cache: 'npm'
+
+      # 3. Instalação das dependências
+      - name: Instalar Dependências
+        run: npm ci
+
+      # 4. Execução dos testes automatizados
+      - name: Executar Testes Automatizados
+        run: npm run test:ci # Ajuste para o comando do seu projeto (ex: cypress run)
+        continue-on-error: true # Garante que o relatório seja gerado mesmo se os testes falharem
+
+      # 5. Armazenamento/Publicação do relatório na pipeline (Artifacts)
+      - name: Upload do Relatório de Testes
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-de-testes
+          path: cypress/reports # Ajuste para a pasta onde seu projeto gera os relatórios (ex: allure-results, mochawesome-report)
+          retention-days: 5

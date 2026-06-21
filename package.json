@@ -7,7 +7,7 @@
     "test": "mocha test/**/*.test.js --reporter mochawesome"
   },
   "keywords": [],
-  "author": "",
+  "author": "jessicaemg <jessicaestevesmg@gmail.com>",
   "license": "ISC",
   "type": "module",
   "dependencies": {
@@ -15,5 +15,6 @@
   },
   "devDependencies": {
     "mochawesome": "^7.1.4"
-  }
+  },
+  "repository": "https://github.com/jessicaemg/projeto-livro-aula05.git"
 }
