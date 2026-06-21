@@ -45,7 +45,7 @@ jobs:
 
           # Salvando o relatório que o seu comando gerou na pasta mochawesome-report
           - name: Salvando o Relatório do Mochawesome
-            uses: actions/upload-artifact@v4
+            uses: actions/upload-artifact@v5
             if: always() # Salva mesmo se o teste falhar
             with:
              name: relatorio-livros-mocha
