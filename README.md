@@ -113,14 +113,13 @@ Para manter a segurança e a flexibilidade do código, a URL da aplicação não
 
 ### 3. Publicação e Isolamento de Relatórios (Artifacts)
 Toda a configuração de relatórios está centralizada no arquivo `.mocharc.json`, mantendo o código limpo. 
-Ao final de cada execução, a pipeline utiliza a biblioteca oficial `actions/upload-artifact@v5` para coletar a pasta gerada pelo Mochawesome. Para evitar conflitos de arquivos duplicados em reexecuções, o nome do artefato é gerado dinamicamente utilizando o identificador de tentativa do GitHub (`relatorio-livros-mocha-${{ github.run_attempt }}`), garantindo o armazenamento seguro por até 30 dias.
+Ao final de cada execução, a pipeline utiliza a biblioteca oficial `actions/upload-artifact@v4`o nome do artefato é gerado dinamicamente utilizando o identificador de tentativa do GitHub (`relatorio-livros-mocha-${{ github.run_attempt }}`), garantindo o armazenamento seguro por até 30 dias.
 
 ---
 
 ## 📂 Estrutura Estratégica do Projeto
 
 * `.github/workflows/main.yml`: Configuração centralizada da pipeline, controle de gatilhos e armazenamento no GitHub.
-* `.mocharc.json`: Arquivo isolado de configuração do Mocha, responsável por ditar as regras do relatório e o caminho dos testes (`test/**/*.test.js`).
 * `package.json`: Gerencia os scripts de atalho do Yarn (`yarn e2e`).
 
 ---
