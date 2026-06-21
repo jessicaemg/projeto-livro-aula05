@@ -17,12 +17,12 @@ jobs:
 
     steps:
       #clone do projeto
-          - uses: actions/checkout@v5
+          - uses: actions/checkout@v4
 
           #passo a passo do node 
-          - uses: actions/setup-node@v5
+          - uses: actions/setup-node@v4
             with:
-             node-version: 24.x
+             node-version: 22.x
 
           #instalação do yarn 
           - name: instalando Yarn 
@@ -45,7 +45,7 @@ jobs:
 
           # Salvando o relatório que o seu comando gerou na pasta mochawesome-report
           - name: Salvando o Relatório do Mochawesome
-            uses: actions/upload-artifact@v5
+            uses: actions/upload-artifact@v4
             if: always() # Salva mesmo se o teste falhar
             with:
              name: relatorio-livros-mocha
